@@ -1,0 +1,19 @@
+.like-button.clicked i {
+    color: red;
+}
+
+.save-button.clicked i {
+    color: red;
+}
+.like-heart {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: screen;
+}
+
+.like-heart.active {
+    mix-blend-mode: revert;
+    color: red;
+}
