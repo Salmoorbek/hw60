@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 59. Javascript 101</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+<body>
+<div id="splash-screen">
+    <button id="login-btn">Войти</button>
+</div>
+<div id="main-content" style="display: none;">
+    <div id="add_post">
+        <button id="add">Добавить</button>
+    </div>
+    <div id="main-content2" style="display: none;">
+        <form id="post-form" class="mx-auto">
+            <div>
+                <label for="post-image">Вставьте фото:</label>
+                <input type="file" id="post-image" name="post-image">
+            </div>
+            <div>
+                <label for="post-description">Описание:</label>
+                <textarea id="post-description" name="post-description"></textarea>
+            </div>
+            <input type="hidden" id="user-id" name="user-id" value="123">
+            <button id="send_btn_post" type="submit">Добавить пост</button>
+        </form>
+    </div>
+</div>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="hw59.js"></script>
+</body>
+</html>
