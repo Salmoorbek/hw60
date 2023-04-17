@@ -234,5 +234,6 @@ document.getElementById("send_btn_post").addEventListener("click", async (event)
     };
     console.log(formData);
     addPost(createPostElement(post));
+    addPostForm.reset();
     await sendData(post);
 });
